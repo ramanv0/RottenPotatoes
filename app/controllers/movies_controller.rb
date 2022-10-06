@@ -7,10 +7,9 @@ class MoviesController < ApplicationController
     end
   
     def index
-      puts "PARAMS!!!:"
-      puts params
-      puts session.to_hash.keys
-      if params.size == 2 and session.to_hash.size > 2
+      if (!params.has_key?(:ratings) and !params.has_key?(:movie_title) and !params.has_key?(:release_date)) and 
+        (session.has_key?(:ratings) or session.has_key?(:movie_title) or session.has_key?(:release_date))
+        
         redirect_to movies_path({ratings: session[:ratings],
         movie_title: session[:movie_title],
         release_date: session[:release_date]})
@@ -66,8 +65,6 @@ class MoviesController < ApplicationController
     end
   
     private
-    # Making "internal" methods private is not required, but is a common practice.
-    # This helps make clear which methods respond to requests, and which ones do not.
     def movie_params
       params.require(:movie).permit(:title, :rating, :description, :release_date)
     end
