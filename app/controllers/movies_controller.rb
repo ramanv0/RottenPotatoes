@@ -11,8 +11,8 @@ class MoviesController < ApplicationController
       puts params
       puts session.to_hash.keys
       if params.size == 2 and session.to_hash.size > 2
-        redirect_to movies_path({ratings: session[:ratings], \
-        movie_title: session[:movie_title], \
+        redirect_to movies_path({ratings: session[:ratings],
+        movie_title: session[:movie_title],
         release_date: session[:release_date]})
       else
         @all_ratings = Movie.all_ratings
