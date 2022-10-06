@@ -15,6 +15,15 @@ class MoviesController < ApplicationController
         @ratings_to_show = checked_ratings.keys
       end
       @movies = Movie.with_ratings(@ratings_to_show)
+      selected_column_style = 'hilite p-3 mb-2 bg-warning text-primary'
+      if params[:movie_title]
+        @movies = @movies.order("title ASC")
+        @movie_title_selected = selected_column_style
+      end
+      if params[:release_date]
+        @movies = @movies.order("release_date ASC")
+        @release_date_selected = selected_column_style
+      end
     end
   
     def new
