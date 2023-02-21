@@ -3,7 +3,7 @@ A Rotten Tomatoes clone written in Ruby using the Ruby on Rails framework. It al
 
 ## Installation
 1. Install Ruby (version 2.6.6 or later) and Ruby on Rails (version 4.2.11 or later).
-2. Clone this repository using `git clone https://github.com/ramanv0/RottenPotatoes.git`.
+2. Clone this repository using `git clone https://github.com/ramanv0/RottenTotatoes.git`.
 3. Navigate to the project directory and run `bundle install` to install the required gems.
 4. Run rails `db:migrate` to set up the database.
 5. Run `rails db:seed` to load the seed data into the database.
