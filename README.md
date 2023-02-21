@@ -6,7 +6,7 @@ This is a Rotten Tomatoes clone written in Ruby using the Ruby on Rails framewor
 2. Clone this repository using `git clone https://github.com/ramanv0/RottenPotatoes`.
 3. Navigate to the project directory and run `bundle install` to install the required gems.
 4. Run rails `db:migrate` to set up the database.
-5. Run `rails db:seed` to load the seed data into the database
+5. Run `rails db:seed` to load the seed data into the database.
 6. Run `rails s` to start the server.
 7. Open your web browser and go to http://localhost:3000 to view the application.
 
