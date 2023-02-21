@@ -1,5 +1,5 @@
 # Rotten Tomatoes Clone
-This is a Rotten Tomatoes clone written in Ruby using the Ruby on Rails framework. It allows users to browse movies, view movie details, and leave reviews.
+A Rotten Tomatoes clone written in Ruby using the Ruby on Rails framework. It allows users to browse movies, view movie details, and leave reviews.
 
 ## Installation
 1. Install Ruby (version 2.6.3 or later) and Ruby on Rails (version 6.1.3 or later) on your computer.
