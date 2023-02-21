@@ -17,3 +17,10 @@ As a user, you can:
 - CRUD reviews for movies
 
 By default, the application comes with a pre-populated list of movies, but you can add your own movies as a user.
+
+## Testing
+This project includes both Cucumber (written with Gherkin syntax) and RSpec tests.
+
+To run the Cucumber tests, use the following command: `bundle exec cucumber`. The Cucumber tests and step definitions are located in the `features` directory.
+
+To run the RSpec tests, use the following command: `bundle exec rspec`. The RSpec tests are located in the `spec` directory.
